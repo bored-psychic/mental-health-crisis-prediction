@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Real datasets — never commit (PhysioNet Data Use Agreement; large)
+data/INS-W_*.csv
+data/studentlife*/
+*.gz
+*.zip
+
+# Generated model artifacts (rerun the notebook to regenerate).
+# Figures under outputs/figures/ ARE tracked for the paper — see note below.
+outputs/models/*.pkl
+outputs/model_results.csv
+outputs/shap_importance.csv
+
+# Claude Code local tooling/skills (not part of the project)
+.claude/
